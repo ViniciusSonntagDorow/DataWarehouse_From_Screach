@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 import os
 
 #Env Variables
-
 load_dotenv()
 
 commodities = ['CL=F', 'GC=F', 'SI=F']

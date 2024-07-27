@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: postgres123_ahbr
+    schema: public
+    tables:
+      - name: commodities
+        description: "Table that contains value data from commodities"
+        columns:
+          - name: Date
+            description: "Observation data"
+          - name: Close
+            description: "Closing commodity price"
+          - name: Symbol
+            description: "Commodity symbol"
+
+      - name: movimentacao_commodities
+        description: "Seed table"
+        columns:
+          - name: date
+            description: "Transaction data"
+          - name: symbol
+            description: "Commodity symbol"
+          - name: action
+            description: "Transaction type (buy/sell)"
+          - name: quantity
+            description: "Quantity transactioned"
