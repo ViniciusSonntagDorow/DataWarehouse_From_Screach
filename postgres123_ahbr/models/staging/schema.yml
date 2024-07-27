@@ -20,4 +20,4 @@ models:
       - name: action
         description: "transaction type"
       - name: quantity
-        description: "quantity transactioned"
+        description: "ammount transactioned"

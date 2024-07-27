@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dm_commodities
+    description: "Data mart with integrated commodities data"
+    columns:
+      - name: date
+        description: "Observation data"
+      - name: symbol
+        description: "commodity symbol"
+      - name: closing_data
+        description: "closing price for the determinated commodity"
+      - name: action
+        description: "Transaction type (buy/sell)"
+      - name: quantity
+        description: "ammount transactioned"
+      - name: value
+        description: "Transaction value"
+      - name: profit
+        description: "Profit of the transaction"
