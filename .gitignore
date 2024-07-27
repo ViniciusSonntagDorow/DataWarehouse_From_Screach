@@ -1,11 +1,6 @@
 
-main.py
 .env
 .vscode
-
-target/
-dbt_packages/
-logs/
 
 profiles.yml
 .user.yml

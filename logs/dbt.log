@@ -1,0 +1,30 @@
+[0m20:20:56.010856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1CCB2F440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C9DEE1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1CD91E600>]}
+
+
+============================== 20:20:56.016856 | 0bf091b1-d252-4226-a0a2-bdf7f6527761 ==============================
+[0m20:20:56.016856 [info ] [MainThread]: Running with dbt=1.8.4
+[0m20:20:56.017861 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:20:56.034149 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/vinic/.dbt')}
+[0m20:20:56.035179 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:21:36.863972 [debug] [MainThread]: Starter project path: C:\Users\vinic\miniconda3\envs\ds_env\Lib\site-packages\dbt\include\starter_project
+[0m20:21:36.883916 [info ] [MainThread]: 
+Your new dbt project "postgres123_ahbr" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:21:36.885914 [info ] [MainThread]: Setting up your profile.
+[0m20:24:47.279938 [info ] [MainThread]: Profile postgres123_ahbr written to C:\Users\vinic\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:24:47.282943 [debug] [MainThread]: Command `dbt init` succeeded at 20:24:47.282943 after 231.44 seconds
+[0m20:24:47.283922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1CD645100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1C9E35AC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1CD21B4A0>]}
+[0m20:24:47.284922 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "postgres123_ahbr"."public"."movimentacao_commodities" ("date" date,"symbol" text,"action" text,"quantity" integer)
+  ;
+    -- dbt seed --
+    
+          insert into "postgres123_ahbr"."public"."movimentacao_commodities" ("date", "symbol", "action", "quantity") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+      
+
+;
+  
