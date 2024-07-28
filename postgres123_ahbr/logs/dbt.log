@@ -3515,3 +3515,405 @@ with relation as (
 [0m19:34:28.404777 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\vinic\\OneDrive\\Documentos\\python\\DataWarehouse_From_Screach\\postgres123_ahbr\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt docs serve', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
 [0m19:34:28.538792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '097ce6cd-1991-4ef5-a7b4-679f2c610278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC947556A0>]}
 [0m19:34:28.571839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '097ce6cd-1991-4ef5-a7b4-679f2c610278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC94275D30>]}
+[0m08:04:43.949759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210133F92B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021015D55250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021015C59130>]}
+
+
+============================== 08:04:43.954669 | 61907faa-1a5e-4ff8-8e34-acda3fd1662f ==============================
+[0m08:04:43.954669 [info ] [MainThread]: Running with dbt=1.8.4
+[0m08:04:43.955651 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '../', 'log_path': 'C:\\Users\\vinic\\OneDrive\\Documentos\\python\\DataWarehouse_From_Screach\\postgres123_ahbr\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m08:04:44.109011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021015F58290>]}
+[0m08:04:44.147283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021015B1A990>]}
+[0m08:04:44.148286 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m08:04:44.154284 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m08:04:44.327225 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m08:04:44.328226 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m08:04:44.331226 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.postgres123_ahbr.example
+[0m08:04:44.354226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210161C7170>]}
+[0m08:04:44.430369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021017338770>]}
+[0m08:04:44.431369 [info ] [MainThread]: Found 1 seed, 3 models, 2 sources, 415 macros
+[0m08:04:44.431369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002101730A9F0>]}
+[0m08:04:44.433369 [info ] [MainThread]: 
+[0m08:04:44.433369 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m08:04:44.436386 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres123_ahbr'
+[0m08:04:44.551392 [debug] [ThreadPool]: Using postgres connection "list_postgres123_ahbr"
+[0m08:04:44.551392 [debug] [ThreadPool]: On list_postgres123_ahbr: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "connection_name": "list_postgres123_ahbr"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m08:04:44.552393 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:04:45.754613 [debug] [ThreadPool]: SQL status: SELECT 4 in 1.203 seconds
+[0m08:04:45.755632 [debug] [ThreadPool]: On list_postgres123_ahbr: Close
+[0m08:04:45.756615 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres123_ahbr_public'
+[0m08:04:45.760614 [debug] [ThreadPool]: Using postgres connection "list_postgres123_ahbr_public"
+[0m08:04:45.761614 [debug] [ThreadPool]: On list_postgres123_ahbr_public: BEGIN
+[0m08:04:45.761614 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m08:04:46.735864 [debug] [ThreadPool]: SQL status: BEGIN in 0.974 seconds
+[0m08:04:46.736861 [debug] [ThreadPool]: Using postgres connection "list_postgres123_ahbr_public"
+[0m08:04:46.737858 [debug] [ThreadPool]: On list_postgres123_ahbr_public: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "connection_name": "list_postgres123_ahbr_public"} */
+select
+      'postgres123_ahbr' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres123_ahbr' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres123_ahbr' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m08:04:46.799897 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.061 seconds
+[0m08:04:46.805928 [debug] [ThreadPool]: On list_postgres123_ahbr_public: ROLLBACK
+[0m08:04:46.856735 [debug] [ThreadPool]: On list_postgres123_ahbr_public: Close
+[0m08:04:46.864830 [debug] [MainThread]: Using postgres connection "master"
+[0m08:04:46.865824 [debug] [MainThread]: On master: BEGIN
+[0m08:04:46.865824 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m08:04:48.832823 [debug] [MainThread]: SQL status: BEGIN in 1.966 seconds
+[0m08:04:48.834836 [debug] [MainThread]: Using postgres connection "master"
+[0m08:04:48.836210 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m08:04:48.977482 [debug] [MainThread]: SQL status: SELECT 4 in 0.140 seconds
+[0m08:04:48.983471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210161AEDB0>]}
+[0m08:04:48.984491 [debug] [MainThread]: On master: ROLLBACK
+[0m08:04:49.037376 [debug] [MainThread]: Using postgres connection "master"
+[0m08:04:49.038464 [debug] [MainThread]: On master: BEGIN
+[0m08:04:49.168959 [debug] [MainThread]: SQL status: BEGIN in 0.129 seconds
+[0m08:04:49.168959 [debug] [MainThread]: On master: COMMIT
+[0m08:04:49.169936 [debug] [MainThread]: Using postgres connection "master"
+[0m08:04:49.170935 [debug] [MainThread]: On master: COMMIT
+[0m08:04:49.254364 [debug] [MainThread]: SQL status: COMMIT in 0.083 seconds
+[0m08:04:49.257364 [debug] [MainThread]: On master: Close
+[0m08:04:49.260357 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m08:04:49.260357 [info ] [MainThread]: 
+[0m08:04:49.266349 [debug] [Thread-1 (]: Began running node model.postgres123_ahbr.stg_commodities
+[0m08:04:49.266349 [info ] [Thread-1 (]: 1 of 3 START sql view model public.stg_commodities ............................. [RUN]
+[0m08:04:49.267348 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.postgres123_ahbr.stg_commodities'
+[0m08:04:49.267348 [debug] [Thread-1 (]: Began compiling node model.postgres123_ahbr.stg_commodities
+[0m08:04:49.272350 [debug] [Thread-1 (]: Writing injected SQL for node "model.postgres123_ahbr.stg_commodities"
+[0m08:04:49.273348 [debug] [Thread-1 (]: Began executing node model.postgres123_ahbr.stg_commodities
+[0m08:04:49.297365 [debug] [Thread-1 (]: Writing runtime sql for node "model.postgres123_ahbr.stg_commodities"
+[0m08:04:49.299365 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_commodities"
+[0m08:04:49.300349 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: BEGIN
+[0m08:04:49.300349 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m08:04:51.154184 [debug] [Thread-1 (]: SQL status: BEGIN in 1.853 seconds
+[0m08:04:51.157277 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_commodities"
+[0m08:04:51.159253 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_commodities"} */
+
+  create view "postgres123_ahbr"."public"."stg_commodities__dbt_tmp"
+    
+    
+  as (
+    -- source import
+
+with source as (
+    SELECT
+        "Date",
+        "Close",
+        "Symbol"
+    FROM
+        "postgres123_ahbr"."public"."commodities"
+),
+
+-- renames/type changes/casts
+
+renamed as (
+    SELECT
+        CAST("Date" as date) as date,
+        "Close" as closing_data,
+        "Symbol" as symbol
+    FROM
+        source
+)
+
+-- select * from
+
+SELECT *
+FROM renamed
+  );
+[0m08:04:51.214685 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.054 seconds
+[0m08:04:51.223364 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_commodities"
+[0m08:04:51.223364 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_commodities"} */
+alter table "postgres123_ahbr"."public"."stg_commodities" rename to "stg_commodities__dbt_backup"
+[0m08:04:51.290002 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.066 seconds
+[0m08:04:51.294003 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_commodities"
+[0m08:04:51.294003 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_commodities"} */
+alter table "postgres123_ahbr"."public"."stg_commodities__dbt_tmp" rename to "stg_commodities"
+[0m08:04:51.350295 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.056 seconds
+[0m08:04:51.362296 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: COMMIT
+[0m08:04:51.362296 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_commodities"
+[0m08:04:51.362296 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: COMMIT
+[0m08:04:51.410795 [debug] [Thread-1 (]: SQL status: COMMIT in 0.048 seconds
+[0m08:04:51.417792 [debug] [Thread-1 (]: Applying DROP to: "postgres123_ahbr"."public"."stg_commodities__dbt_backup"
+[0m08:04:51.421349 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_commodities"
+[0m08:04:51.421349 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_commodities"} */
+drop view if exists "postgres123_ahbr"."public"."stg_commodities__dbt_backup" cascade
+[0m08:04:51.474895 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.053 seconds
+[0m08:04:51.476414 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_commodities: Close
+[0m08:04:51.478414 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002101392A0C0>]}
+[0m08:04:51.479414 [info ] [Thread-1 (]: 1 of 3 OK created sql view model public.stg_commodities ........................ [[32mCREATE VIEW[0m in 2.21s]
+[0m08:04:51.479414 [debug] [Thread-1 (]: Finished running node model.postgres123_ahbr.stg_commodities
+[0m08:04:51.480414 [debug] [Thread-1 (]: Began running node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m08:04:51.480414 [info ] [Thread-1 (]: 2 of 3 START sql view model public.stg_movimentacao_commodities ................ [RUN]
+[0m08:04:51.481414 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.postgres123_ahbr.stg_commodities, now model.postgres123_ahbr.stg_movimentacao_commodities)
+[0m08:04:51.481414 [debug] [Thread-1 (]: Began compiling node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m08:04:51.483415 [debug] [Thread-1 (]: Writing injected SQL for node "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:51.484416 [debug] [Thread-1 (]: Began executing node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m08:04:51.486414 [debug] [Thread-1 (]: Writing runtime sql for node "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:51.489400 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:51.489400 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: BEGIN
+[0m08:04:51.489400 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:04:52.463109 [debug] [Thread-1 (]: SQL status: BEGIN in 0.972 seconds
+[0m08:04:52.463109 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:52.464132 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_movimentacao_commodities"} */
+
+  create view "postgres123_ahbr"."public"."stg_movimentacao_commodities__dbt_tmp"
+    
+    
+  as (
+    -- source import
+
+with source as (
+    SELECT
+        date,
+        symbol,
+        action,
+        quantity
+    FROM
+        "postgres123_ahbr"."public"."movimentacao_commodities"
+),
+
+-- renames/type changes/casts
+
+renamed as (
+    SELECT
+        CAST(date as date) as movement_date,
+        symbol,
+        action,
+        quantity
+    FROM
+        source
+)
+
+-- select * from
+
+SELECT *
+FROM renamed
+  );
+[0m08:04:52.522285 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.058 seconds
+[0m08:04:52.525294 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:52.525294 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_movimentacao_commodities"} */
+alter table "postgres123_ahbr"."public"."stg_movimentacao_commodities" rename to "stg_movimentacao_commodities__dbt_backup"
+[0m08:04:52.581680 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.055 seconds
+[0m08:04:52.586682 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:52.587680 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_movimentacao_commodities"} */
+alter table "postgres123_ahbr"."public"."stg_movimentacao_commodities__dbt_tmp" rename to "stg_movimentacao_commodities"
+[0m08:04:52.642258 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.053 seconds
+[0m08:04:52.648129 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: COMMIT
+[0m08:04:52.648129 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:52.649129 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: COMMIT
+[0m08:04:52.695257 [debug] [Thread-1 (]: SQL status: COMMIT in 0.045 seconds
+[0m08:04:52.701277 [debug] [Thread-1 (]: Applying DROP to: "postgres123_ahbr"."public"."stg_movimentacao_commodities__dbt_backup"
+[0m08:04:52.702278 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m08:04:52.703277 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.stg_movimentacao_commodities"} */
+drop view if exists "postgres123_ahbr"."public"."stg_movimentacao_commodities__dbt_backup" cascade
+[0m08:04:52.772498 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.068 seconds
+[0m08:04:52.776502 [debug] [Thread-1 (]: On model.postgres123_ahbr.stg_movimentacao_commodities: Close
+[0m08:04:52.777484 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210176A52B0>]}
+[0m08:04:52.778485 [info ] [Thread-1 (]: 2 of 3 OK created sql view model public.stg_movimentacao_commodities ........... [[32mCREATE VIEW[0m in 1.30s]
+[0m08:04:52.779483 [debug] [Thread-1 (]: Finished running node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m08:04:52.780481 [debug] [Thread-1 (]: Began running node model.postgres123_ahbr.dm_commodities
+[0m08:04:52.781497 [info ] [Thread-1 (]: 3 of 3 START sql view model public.dm_commodities .............................. [RUN]
+[0m08:04:52.782480 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.postgres123_ahbr.stg_movimentacao_commodities, now model.postgres123_ahbr.dm_commodities)
+[0m08:04:52.782480 [debug] [Thread-1 (]: Began compiling node model.postgres123_ahbr.dm_commodities
+[0m08:04:52.784509 [debug] [Thread-1 (]: Writing injected SQL for node "model.postgres123_ahbr.dm_commodities"
+[0m08:04:52.785495 [debug] [Thread-1 (]: Began executing node model.postgres123_ahbr.dm_commodities
+[0m08:04:52.788498 [debug] [Thread-1 (]: Writing runtime sql for node "model.postgres123_ahbr.dm_commodities"
+[0m08:04:52.791493 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.dm_commodities"
+[0m08:04:52.791493 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: BEGIN
+[0m08:04:52.792495 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m08:04:54.752805 [debug] [Thread-1 (]: SQL status: BEGIN in 1.961 seconds
+[0m08:04:54.753790 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.dm_commodities"
+[0m08:04:54.754785 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.dm_commodities"} */
+
+  create view "postgres123_ahbr"."public"."dm_commodities__dbt_tmp"
+    
+    
+  as (
+    with commodities as (
+    SELECT
+        date,
+        closing_data,
+        symbol
+    FROM
+        "postgres123_ahbr"."public"."stg_commodities"
+),
+
+movimentacao as (
+    SELECT
+        movement_date,
+        symbol,
+        action,
+        quantity
+    FROM
+        "postgres123_ahbr"."public"."stg_movimentacao_commodities"
+),
+
+joined as (
+    SELECT
+        c.date,
+        c.symbol,
+        c.closing_data,
+        m.action,
+        m.quantity,
+        (m.quantity * c.closing_data) as value,
+        CASE
+            WHEN m.action = 'sell' then (m.quantity * c.closing_data)
+            ELSE -(m.quantity * c.closing_data)
+        END as profit
+    FROM
+        commodities c
+    INNER JOIN
+        movimentacao m
+    ON
+        c.date = m.movement_date
+        AND
+        c.symbol = m.symbol
+),
+
+last_day as (
+    SELECT max(date) as max_date
+    FROM joined
+),
+
+filtered as(
+    SELECT *
+    FROM joined
+    WHERE date = (SELECT max_date FROM last_day)
+)
+
+SELECT
+    date,
+    symbol,
+    closing_data,
+    action,
+    value,
+    profit
+FROM
+    filtered
+  );
+[0m08:04:54.808823 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.054 seconds
+[0m08:04:54.810819 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.dm_commodities"
+[0m08:04:54.811822 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.dm_commodities"} */
+alter table "postgres123_ahbr"."public"."dm_commodities__dbt_tmp" rename to "dm_commodities"
+[0m08:04:54.894322 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.081 seconds
+[0m08:04:54.899330 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: COMMIT
+[0m08:04:54.900325 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.dm_commodities"
+[0m08:04:54.900325 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: COMMIT
+[0m08:04:54.961516 [debug] [Thread-1 (]: SQL status: COMMIT in 0.061 seconds
+[0m08:04:54.964499 [debug] [Thread-1 (]: Applying DROP to: "postgres123_ahbr"."public"."dm_commodities__dbt_backup"
+[0m08:04:54.965518 [debug] [Thread-1 (]: Using postgres connection "model.postgres123_ahbr.dm_commodities"
+[0m08:04:54.966497 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "node_id": "model.postgres123_ahbr.dm_commodities"} */
+drop view if exists "postgres123_ahbr"."public"."dm_commodities__dbt_backup" cascade
+[0m08:04:55.031088 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.065 seconds
+[0m08:04:55.034102 [debug] [Thread-1 (]: On model.postgres123_ahbr.dm_commodities: Close
+[0m08:04:55.035103 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '61907faa-1a5e-4ff8-8e34-acda3fd1662f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021017808710>]}
+[0m08:04:55.036102 [info ] [Thread-1 (]: 3 of 3 OK created sql view model public.dm_commodities ......................... [[32mCREATE VIEW[0m in 2.25s]
+[0m08:04:55.037102 [debug] [Thread-1 (]: Finished running node model.postgres123_ahbr.dm_commodities
+[0m08:04:55.038104 [debug] [MainThread]: Using postgres connection "master"
+[0m08:04:55.038104 [debug] [MainThread]: On master: BEGIN
+[0m08:04:55.039103 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m08:04:56.860697 [debug] [MainThread]: SQL status: BEGIN in 1.822 seconds
+[0m08:04:56.861697 [debug] [MainThread]: On master: COMMIT
+[0m08:04:56.862699 [debug] [MainThread]: Using postgres connection "master"
+[0m08:04:56.862699 [debug] [MainThread]: On master: COMMIT
+[0m08:04:56.913698 [debug] [MainThread]: SQL status: COMMIT in 0.051 seconds
+[0m08:04:56.914719 [debug] [MainThread]: On master: Close
+[0m08:04:56.914719 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m08:04:56.914719 [debug] [MainThread]: Connection 'list_postgres123_ahbr' was properly closed.
+[0m08:04:56.915699 [debug] [MainThread]: Connection 'list_postgres123_ahbr_public' was properly closed.
+[0m08:04:56.915699 [debug] [MainThread]: Connection 'model.postgres123_ahbr.dm_commodities' was properly closed.
+[0m08:04:56.916698 [info ] [MainThread]: 
+[0m08:04:56.916698 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 12.48 seconds (12.48s).
+[0m08:04:56.917698 [debug] [MainThread]: Command end result
+[0m08:04:56.935259 [info ] [MainThread]: 
+[0m08:04:56.935259 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m08:04:56.936262 [info ] [MainThread]: 
+[0m08:04:56.936262 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m08:04:56.937260 [debug] [MainThread]: Command `dbt run` succeeded at 08:04:56.937260 after 13.08 seconds
+[0m08:04:56.938280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210133F92B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021015EFDCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021015AE2A20>]}
+[0m08:04:56.938280 [debug] [MainThread]: Flushing usage events
