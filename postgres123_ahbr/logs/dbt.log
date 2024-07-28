@@ -3292,3 +3292,226 @@ drop view if exists "postgres123_ahbr"."public"."dm_commodities__dbt_backup" cas
 [0m19:26:07.581244 [debug] [MainThread]: Command `dbt run` succeeded at 19:26:07.581244 after 12.11 seconds
 [0m19:26:07.581244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291D38FB3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291D326CA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000291D3115C40>]}
 [0m19:26:07.581244 [debug] [MainThread]: Flushing usage events
+[0m19:33:53.195137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F4291F6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F4291FF20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F4291DB50>]}
+
+
+============================== 19:33:53.201149 | be88ff92-cba3-46e4-8675-d34c12f10f92 ==============================
+[0m19:33:53.201149 [info ] [MainThread]: Running with dbt=1.8.4
+[0m19:33:53.202133 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\vinic\\OneDrive\\Documentos\\python\\DataWarehouse_From_Screach\\postgres123_ahbr\\logs', 'version_check': 'True', 'profiles_dir': '../', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:33:53.332823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'be88ff92-cba3-46e4-8675-d34c12f10f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F42A039E0>]}
+[0m19:33:53.366773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'be88ff92-cba3-46e4-8675-d34c12f10f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F42602F60>]}
+[0m19:33:53.367665 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m19:33:53.373274 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m19:33:53.611816 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m19:33:53.612818 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m19:33:53.615817 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.postgres123_ahbr.example
+[0m19:33:53.640213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'be88ff92-cba3-46e4-8675-d34c12f10f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F42C53D10>]}
+[0m19:33:53.659912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'be88ff92-cba3-46e4-8675-d34c12f10f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F43E36540>]}
+[0m19:33:53.660910 [info ] [MainThread]: Found 1 seed, 3 models, 2 sources, 415 macros
+[0m19:33:53.660910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be88ff92-cba3-46e4-8675-d34c12f10f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F42049F40>]}
+[0m19:33:53.662912 [info ] [MainThread]: 
+[0m19:33:53.663911 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m19:33:53.666462 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres123_ahbr_public'
+[0m19:33:53.761856 [debug] [ThreadPool]: Using postgres connection "list_postgres123_ahbr_public"
+[0m19:33:53.762875 [debug] [ThreadPool]: On list_postgres123_ahbr_public: BEGIN
+[0m19:33:53.762875 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:33:55.086255 [debug] [ThreadPool]: SQL status: BEGIN in 1.323 seconds
+[0m19:33:55.086255 [debug] [ThreadPool]: Using postgres connection "list_postgres123_ahbr_public"
+[0m19:33:55.086255 [debug] [ThreadPool]: On list_postgres123_ahbr_public: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "connection_name": "list_postgres123_ahbr_public"} */
+select
+      'postgres123_ahbr' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres123_ahbr' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'postgres123_ahbr' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m19:33:55.147397 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.061 seconds
+[0m19:33:55.148427 [debug] [ThreadPool]: On list_postgres123_ahbr_public: ROLLBACK
+[0m19:33:55.196831 [debug] [ThreadPool]: On list_postgres123_ahbr_public: Close
+[0m19:33:55.201834 [debug] [MainThread]: Using postgres connection "master"
+[0m19:33:55.202323 [debug] [MainThread]: On master: BEGIN
+[0m19:33:55.202323 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:33:56.175786 [debug] [MainThread]: SQL status: BEGIN in 0.973 seconds
+[0m19:33:56.179785 [debug] [MainThread]: Using postgres connection "master"
+[0m19:33:56.182777 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m19:33:56.243622 [debug] [MainThread]: SQL status: SELECT 4 in 0.060 seconds
+[0m19:33:56.245617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'be88ff92-cba3-46e4-8675-d34c12f10f92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F42A7F860>]}
+[0m19:33:56.245617 [debug] [MainThread]: On master: ROLLBACK
+[0m19:33:56.285646 [debug] [MainThread]: On master: Close
+[0m19:33:56.286696 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m19:33:56.286696 [info ] [MainThread]: 
+[0m19:33:56.289834 [debug] [Thread-1 (]: Began running node model.postgres123_ahbr.stg_commodities
+[0m19:33:56.289834 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.postgres123_ahbr.stg_commodities'
+[0m19:33:56.290967 [debug] [Thread-1 (]: Began compiling node model.postgres123_ahbr.stg_commodities
+[0m19:33:56.295401 [debug] [Thread-1 (]: Writing injected SQL for node "model.postgres123_ahbr.stg_commodities"
+[0m19:33:56.296401 [debug] [Thread-1 (]: Began executing node model.postgres123_ahbr.stg_commodities
+[0m19:33:56.297401 [debug] [Thread-1 (]: Finished running node model.postgres123_ahbr.stg_commodities
+[0m19:33:56.297401 [debug] [Thread-1 (]: Began running node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m19:33:56.298404 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.postgres123_ahbr.stg_commodities, now model.postgres123_ahbr.stg_movimentacao_commodities)
+[0m19:33:56.299402 [debug] [Thread-1 (]: Began compiling node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m19:33:56.301387 [debug] [Thread-1 (]: Writing injected SQL for node "model.postgres123_ahbr.stg_movimentacao_commodities"
+[0m19:33:56.301387 [debug] [Thread-1 (]: Began executing node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m19:33:56.302386 [debug] [Thread-1 (]: Finished running node model.postgres123_ahbr.stg_movimentacao_commodities
+[0m19:33:56.303414 [debug] [Thread-1 (]: Began running node seed.postgres123_ahbr.movimentacao_commodities
+[0m19:33:56.303414 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.postgres123_ahbr.stg_movimentacao_commodities, now seed.postgres123_ahbr.movimentacao_commodities)
+[0m19:33:56.303414 [debug] [Thread-1 (]: Began compiling node seed.postgres123_ahbr.movimentacao_commodities
+[0m19:33:56.304407 [debug] [Thread-1 (]: Began executing node seed.postgres123_ahbr.movimentacao_commodities
+[0m19:33:56.305402 [debug] [Thread-1 (]: Finished running node seed.postgres123_ahbr.movimentacao_commodities
+[0m19:33:56.305402 [debug] [Thread-1 (]: Began running node model.postgres123_ahbr.dm_commodities
+[0m19:33:56.306402 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.postgres123_ahbr.movimentacao_commodities, now model.postgres123_ahbr.dm_commodities)
+[0m19:33:56.306402 [debug] [Thread-1 (]: Began compiling node model.postgres123_ahbr.dm_commodities
+[0m19:33:56.308401 [debug] [Thread-1 (]: Writing injected SQL for node "model.postgres123_ahbr.dm_commodities"
+[0m19:33:56.309401 [debug] [Thread-1 (]: Began executing node model.postgres123_ahbr.dm_commodities
+[0m19:33:56.309401 [debug] [Thread-1 (]: Finished running node model.postgres123_ahbr.dm_commodities
+[0m19:33:56.310401 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m19:33:56.310401 [debug] [MainThread]: Connection 'list_postgres123_ahbr_public' was properly closed.
+[0m19:33:56.311386 [debug] [MainThread]: Connection 'model.postgres123_ahbr.dm_commodities' was properly closed.
+[0m19:33:56.312413 [debug] [MainThread]: Command end result
+[0m19:33:56.366405 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m19:33:56.367404 [info ] [MainThread]: Building catalog
+[0m19:33:56.372973 [debug] [ThreadPool]: Acquiring new postgres connection 'postgres123_ahbr.information_schema'
+[0m19:33:56.376973 [debug] [ThreadPool]: Using postgres connection "postgres123_ahbr.information_schema"
+[0m19:33:56.377972 [debug] [ThreadPool]: On postgres123_ahbr.information_schema: BEGIN
+[0m19:33:56.377972 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:33:57.612160 [debug] [ThreadPool]: SQL status: BEGIN in 1.234 seconds
+[0m19:33:57.612160 [debug] [ThreadPool]: Using postgres connection "postgres123_ahbr.information_schema"
+[0m19:33:57.613278 [debug] [ThreadPool]: On postgres123_ahbr.information_schema: /* {"app": "dbt", "dbt_version": "1.8.4", "profile_name": "postgres123_ahbr", "target_name": "dev", "connection_name": "postgres123_ahbr.information_schema"} */
+
+    
+    
+
+    select
+        'postgres123_ahbr' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('dm_commodities')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_movimentacao_commodities')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('commodities')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_commodities')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('movimentacao_commodities')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m19:33:57.693685 [debug] [ThreadPool]: SQL status: SELECT 20 in 0.080 seconds
+[0m19:33:57.699696 [debug] [ThreadPool]: On postgres123_ahbr.information_schema: ROLLBACK
+[0m19:33:57.783771 [debug] [ThreadPool]: On postgres123_ahbr.information_schema: Close
+[0m19:33:57.806762 [info ] [MainThread]: Catalog written to C:\Users\vinic\OneDrive\Documentos\python\DataWarehouse_From_Screach\postgres123_ahbr\target\catalog.json
+[0m19:33:57.807761 [debug] [MainThread]: Command `dbt docs generate` succeeded at 19:33:57.807761 after 4.77 seconds
+[0m19:33:57.807761 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m19:33:57.808790 [debug] [MainThread]: Connection 'postgres123_ahbr.information_schema' was properly closed.
+[0m19:33:57.808790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F425A3140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F41FBF5F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026F428FF6E0>]}
+[0m19:33:57.808790 [debug] [MainThread]: Flushing usage events
+[0m19:34:28.399541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC942302F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC93617980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC941DE030>]}
+
+
+============================== 19:34:28.404777 | 097ce6cd-1991-4ef5-a7b4-679f2c610278 ==============================
+[0m19:34:28.404777 [info ] [MainThread]: Running with dbt=1.8.4
+[0m19:34:28.404777 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '../', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\vinic\\OneDrive\\Documentos\\python\\DataWarehouse_From_Screach\\postgres123_ahbr\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt docs serve', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:34:28.538792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '097ce6cd-1991-4ef5-a7b4-679f2c610278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC947556A0>]}
+[0m19:34:28.571839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '097ce6cd-1991-4ef5-a7b4-679f2c610278', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DC94275D30>]}

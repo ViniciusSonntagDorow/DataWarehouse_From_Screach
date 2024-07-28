@@ -1,11 +1,9 @@
-#Imports
 import yfinance as yf
 import pandas as pd
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
-#Env Variables
 load_dotenv()
 
 commodities = ['CL=F', 'GC=F', 'SI=F']
@@ -20,8 +18,6 @@ DB_SCHEMA = os.getenv('DB_SCHEMA_PROD')
 DATABASE_URL = f'postgresql://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}'
 
 engine = create_engine(DATABASE_URL)
-
-#Code itself
 
 def get_commodities_data(symbol,period='5y',interval='1d'):
     ticker = yf.Ticker(symbol)
